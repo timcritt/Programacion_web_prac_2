@@ -1,0 +1,72 @@
+nav {
+	display: flex;
+	flex-direction: column;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+}
+li {
+	list-style: none;
+	padding: 6px 10px;
+	margin: 4px;
+	border: 1px solid #666;
+	text-align: center;
+	min-width: 75px;
+	cursor: pointer;
+}
+li:hover,
+li.seleccionado {
+	background-color: #e4e4e4;
+}
+input {
+	padding: 6px 10px;
+	min-width: 300px;
+}
+button {
+	padding: 6px 10px;
+	margin: 4px;
+	border: 1px solid #666;
+	text-align: center;
+	min-width: 75px;
+}
+
+header {
+	margin-bottom: 20px;
+	height: 80px;
+}
+
+#mainContainer {
+	display: flex;
+	flex-direction: row;
+	height: calc(100vh - 130px);
+	padding: 10px;
+}
+#listado {
+	width: 30%;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+#listado ul {
+	flex-direction: column;
+}
+#listado button {
+	width: calc(100% - 8px);
+	box-sizing: border-box;
+}
+#seleccionados {
+	width: 70%;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+#seleccionados ul,
+#seleccionados ul li {
+	display: flex;
+	flex-direction: column;
+}
+.no-content {
+	color: red;
+	font-weight: bold;
+}

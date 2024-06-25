@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Práctica 2</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<nav id="mainNav">
+				<ul>
+					<li data-tipo="movie">Películas</li>
+					<li data-tipo="series">Series</li>
+					<li data-tipo="episode">Episodios</li>
+				</ul>
+			</nav>
+			<form>
+				<input id="buscador" placeholder="Escribe para buscar" />
+				<button id="botonBuscar">Buscar</button>
+				<button id="botonReset">Reset</button>
+			</form>
+		</header>
+		<div id="mainContainer">
+			<aside id="listado"></aside>
+			<main id="seleccionados"></main>
+		</div>
+
+		<script src="classes.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
